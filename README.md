@@ -13,9 +13,9 @@ Migrate Enzyme tests [eznyme.test.tsx](./src/tests/eznyme.test.tsx) to React Tes
     ```
     yarn
     ```
-2) Bootstrap cross-project dependencies: run following command in a terminal from the project's root folder
+2) Install project dependencies: run following command in a terminal from the project's root folder
     ```
-    yarn bootstrap
+    yarn install
     ```
 3) Smoke test: run application in development mode to make sure it renders a button and a toggle.
     ```
