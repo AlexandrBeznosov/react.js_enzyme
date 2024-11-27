@@ -5,7 +5,7 @@ Migrate Enzyme tests [eznyme.test.tsx](./src/tests/eznyme.test.tsx) to React Tes
 
 
 ## Prerequisites
-- Install [Node.js v16.10.1](https://nodejs.org/en/download/current). The particular version is required.
+- Install [Node.js v16.20.1](https://nodejs.org/en/download/current). The particular version is required.
 - Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) package manager.
 
 ## Project initialization
