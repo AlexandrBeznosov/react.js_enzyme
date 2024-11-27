@@ -65,8 +65,8 @@ describe('React Testing Library do:', () => {
         // simulate input
         fireEvent.click(input);
 
-        // check the attribute value (since the initial state of the checkbox is checked, im asserting wether or not it is unchecked.)
-        expect(input).not.toBeChecked();
+        // check the attribute value 
+        expect(input).not.toBeChecked(); // since the initial state of the checkbox is checked, im asserting wether or not it is unchecked.
     });
 
     test('set component property', () => {
