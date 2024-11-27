@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Enzyme do: create snapshot of mounted component 1`] = `
+<App>
+  <div
+    className="App"
+  >
+    <Button
+      isDisabled={false}
+      onClick={[Function]}
+      title="Click me!"
+    >
+      <div
+        className="button-style"
+        data-test-target="button-element"
+        onClick={[Function]}
+      >
+        Click me!
+      </div>
+    </Button>
+    <Toggle
+      initialState={true}
+      onChange={[Function]}
+      title="Toggle me!"
+    >
+      <label
+        className="toggle-style"
+        htmlFor="toggle-id"
+      >
+        <input
+          checked={true}
+          data-test-target="toggle-element"
+          id="toggle-id"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        Toggle me!
+      </label>
+    </Toggle>
+  </div>
+</App>
+`;
