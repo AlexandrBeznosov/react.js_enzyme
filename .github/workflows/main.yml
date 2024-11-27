@@ -1,12 +1,12 @@
-name: Feature Branch Workflow
+name: Migration Branch Workflow
 
 on:
   push:
     branches:
-      - feature-branch
+      - migration
   pull_request:
     branches:
-      - feature-branch
+      - migration
 
 jobs:
   build:
