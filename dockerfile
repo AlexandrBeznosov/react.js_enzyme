@@ -1,5 +1,5 @@
 # Use the official Node.js image from the Docker Hub and specify the version
-FROM node:16.10.1
+FROM node:16.20.1
 
 # Create and set the working directory inside the container
 WORKDIR /usr/src/app
