@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, logRoles } from '@testing-library/dom';
+import { fireEvent, logRoles } from '@testing-library/react';
 import { render, screen } from '@testing-library/react';
 import { App } from '../components/app';
 import { Toggle, ToggleProps } from '../components/toggle/toggle';
@@ -8,11 +8,11 @@ import { Button, ButtonProps } from '../components/button/button';
 describe('React Testing Library do:', () => {
 
     test('create snapshot of mounted component', () => {
-        // render app
-        render(<App />);
+        // render app as a doc fragment
+        const {asFragment} = render(<App />);
 
         // check the snapshot
-        expect(screen).toMatchSnapshot;
+        expect(asFragment()).toMatchSnapshot(); 
     });
 
     test('find child by component', () => {
@@ -29,10 +29,10 @@ describe('React Testing Library do:', () => {
 
     test('find child by attribute', () => {
         // render App
-        const {container} = render(<App/>);
+        render(<App/>);
 
         // find the component 
-        const childElement = container.querySelector('[data-test-target="button-element"]'); // had to use query selector because getByTestId doesn't work since that function requires a data attribute named data-testid.
+        const childElement = screen.getByTestId("button-element");
 
         // check if it exists
         expect(childElement).toBeInTheDocument();
@@ -60,7 +60,7 @@ describe('React Testing Library do:', () => {
         render(<App/>);
 
         // find the component and it's attribute
-        const input = screen.getByLabelText(/toggle/i);
+        const input = screen.getByTestId("toggle-element");
 
         // simulate input
         fireEvent.click(input);

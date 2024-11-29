@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React Testing Library do: create snapshot of mounted component 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="button-style"
+      data-test-target="button-element"
+    >
+      Click me!
+    </div>
+    <label
+      class="toggle-style"
+      for="toggle-id"
+    >
+      <input
+        checked=""
+        data-test-target="toggle-element"
+        id="toggle-id"
+        type="checkbox"
+      />
+      Toggle me!
+    </label>
+  </div>
+</DocumentFragment>
+`;
